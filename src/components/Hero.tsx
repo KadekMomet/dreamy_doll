@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="flex-1 space-y-4 md:space-y-6 text-center md:text-left z-10"
+          className="flex-1 space-y-4 md:space-y-6 text-center md:text-left z-10 order-2 md:order-1"
         >
           <motion.h1
             variants={itemVariants}
@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
           animate={{ opacity: 1, scale: 1, rotate: 0 }}
           transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
-          className="flex-1 relative mt-6 md:mt-0 w-full"
+          className="flex-1 relative mt-6 md:mt-0 w-full order-1 md:order-2"
         >
           <motion.div
             animate={{
