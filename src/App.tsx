@@ -9,8 +9,8 @@ import Features from './components/Features';
 import ProductShowcase from './components/ProductShowcase';
 import OrderProcess from './components/OrderProcess';
 import CustomForm from './components/CustomForm';
-import Testimonials from './components/Testimonials';
-import FAQ from './components/FAQ';
+// import Testimonials from './components/Testimonials';
+// import FAQ from './components/FAQ';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
 import CartDrawer from './components/CartDrawer';
@@ -58,7 +58,7 @@ const App = () => {
   const handleCheckout = () => {
     if (cart.length === 0) return;
     
-    let message = `Halo Admin Dreamy Doll! 💖\n\nSaya ingin memesan produk berikut:\n`;
+    let message = `Halo Admin Dreamy Doll! \n\nSaya ingin memesan produk berikut:\n`;
     cart.forEach((item, index) => {
       message += `${index + 1}. ${item.name} (x${item.quantity}) - Rp${(item.price * item.quantity).toLocaleString()}\n`;
     });
@@ -69,7 +69,7 @@ const App = () => {
 
   const handleCustomSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const message = `Halo Admin Dreamy Doll! ✨\n\nSaya ingin memesan *CUSTOM BONEKA*:\n\nNama: ${customOrder.nama}\nBoneka: ${customOrder.tipeBoneka}\nDeskripsi: ${customOrder.deskripsi}\nKontak: ${customOrder.kontak}\n\nMohon bantuannya untuk estimasi harga ya min!`;
+    const message = `Halo Admin Dreamy Doll! \n\nSaya ingin memesan *CUSTOM BONEKA*:\n\nNama        : ${customOrder.nama}\nBoneka      : ${customOrder.tipeBoneka}\nDeskripsi   : ${customOrder.deskripsi}\nKontak      : ${customOrder.kontak}\n\nMohon bantuannya untuk estimasi harga ya min!`;
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
@@ -87,8 +87,8 @@ const App = () => {
           onOrderChange={setCustomOrder} 
           onSubmit={handleCustomSubmit} 
         />
-        <Testimonials />
-        <FAQ />
+        {/* <Testimonials />
+        <FAQ /> */}
         <CTA onOpenCart={() => setIsCartOpen(true)} />
       </main>
 

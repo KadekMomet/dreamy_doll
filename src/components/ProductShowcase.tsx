@@ -92,7 +92,7 @@ interface ProductShowcaseProps {
 
 const ProductShowcase: React.FC<ProductShowcaseProps> = ({ onAddToCart }) => {
   const [selectedCategory, setSelectedCategory] = useState('Semua');
-  const categories = ['Semua', 'Hewan', 'Tanaman', 'Fantasi'];
+  const categories = ['Semua', 'Hewan', 'Tanaman', 'Lainnya'];
 
   const filteredProducts = selectedCategory === 'Semua' 
     ? PRODUCTS 
@@ -107,7 +107,7 @@ const ProductShowcase: React.FC<ProductShowcaseProps> = ({ onAddToCart }) => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl font-bold mb-2">Koleksi Terpopuler</h2>
+            <h2 className="text-3xl font-bold mb-2">Koleksi Kami</h2>
             <p className="text-slate-500">Pilih ganci lucu untuk menemani harimu</p>
           </motion.div>
           

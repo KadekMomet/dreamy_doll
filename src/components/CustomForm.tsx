@@ -22,11 +22,15 @@ const CustomForm: React.FC<CustomFormProps> = ({ customOrder, onOrderChange, onS
             <div className="space-y-3 md:space-y-4">
               <div className="flex items-center gap-3">
                 <div className="w-7 h-7 md:w-8 md:h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center"><CheckCircle size={14} className="md:w-4 md:h-4"/></div>
-                <span className="text-xs md:text-sm font-medium">Bebas pilih benang</span>
+                <span className="text-xs md:text-sm font-medium">Bebas pilih warna</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-7 h-7 md:w-8 md:h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center"><CheckCircle size={14} className="md:w-4 md:h-4"/></div>
-                <span className="text-xs md:text-sm font-medium">Estimasi pengerjaan 3-5 hari</span>
+                <span className="text-xs md:text-sm font-medium">Estimasi pengerjaan 1-5 hari</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-7 h-7 md:w-8 md:h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center"><CheckCircle size={14} className="md:w-4 md:h-4"/></div>
+                <span className="text-xs md:text-sm font-medium">Bisa request bentuk sesuai pola</span>
               </div>
             </div>
           </div>
@@ -44,7 +48,7 @@ const CustomForm: React.FC<CustomFormProps> = ({ customOrder, onOrderChange, onS
                 />
               </div>
               <div>
-                <label htmlFor="tipeBoneka" className="block text-xs md:text-sm font-bold text-slate-700 mb-1">Nama Boneka / Tipe</label>
+                <label htmlFor="tipeBoneka" className="block text-xs md:text-sm font-bold text-slate-700 mb-1">Bentuk / Tipe</label>
                 <input 
                   id="tipeBoneka"
                   required

@@ -6,8 +6,8 @@ const Features: React.FC = () => {
   const features = [
     { icon: <Heart className="text-pink-500" />, title: "Full Handmade", desc: "Setiap boneka dirajut manual dengan penuh ketelitian." },
     { icon: <Palette className="text-purple-500" />, title: "Custom Warna", desc: "Bebas pilih kombinasi warna kesukaanmu." },
-    { icon: <ShieldCheck className="text-green-500" />, title: "Bahan Premium", desc: "Menggunakan benang katun lembut dan tidak gampang berudul." },
-    { icon: <Truck className="text-orange-500" />, title: "Pengiriman Aman", desc: "Packing cantik dan super aman sampai ke alamatmu." }
+    { icon: <ShieldCheck className="text-green-500" />, title: "Bahan Premium", desc: "Menggunakan bahan yang lembut dan tidak gampang berudul." },
+    { icon: <Truck className="text-orange-500" />, title: "Pengerjaan Cepat", desc: "Pesanan custom dikerjakan dengan cepat tanpa mengurangi kualitas hasil akhir." }
   ];
 
   const containerVariants = {
